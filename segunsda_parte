@@ -1,0 +1,42 @@
+INSERT INTO clientes (nome, endereco, email, celular, data_nascimento) VALUES
+('maicon alves', 'Rua a, 231', 'maicon123@gmail.com', '54321-12345', '1900-01-25'),
+('gabriel matos', 'Av. d, 461', 'gabrielmatos@gmail.com', '8888-8888', '1985-08-25'),
+('Miguel Nery', 'Rua. Z, 019', 'nery@gmail.com', '0000-0000', '1987-11-05');
+('vitor ramos', 'Rua C, 781', 'vitorramos@gmail.com', '98765-56789', '1978-12-10'),
+('Mike apelão', 'Av. D, 918', 'mike@gmail.com', '6666-6666', '1995-03-20'),
+('miguel Cesar', 'Rua E, 021', 'miguel@gmail.com', '4444-5555', '1982-07-03'),
+('Edna Pereira', 'Av. F, 771', 'ednarr@gmail.com', '9283-1029', '1998-10-30'),
+('Paulo Mendes', 'Rua L, 871', 'paulo@gmail.com', '1111-1111', '1975-06-28'),
+('Fernanda veira', 'Av. H, 481', 'fernanda@gmail.com', '2222-2222', '1993-09-12'),
+('Lucas alves', 'Rua V, 211', 'lucas@gmail.com', '3333-3333', '1989-02-18'),
+
+INSERT INTO produtos (nome, preco, descricao, q_estoque) VALUES
+('Nike Air-force', 899.99, 'Nike Air-force', 300),
+('Relógio', 79.99, 'Relogio', 20),
+('Moletom', 79.99, 'Moletom Preto G', 40),
+('Correntinha de Prata', 49.99, 'Correntinha de prata ', 12),
+('Monitor Asus 360Hz', 7299.99, 'Monitor Asus 360hz', 5),
+('Boné', 89.99, 'Boné preto Nike ajustável', 35),
+('Malbec', 169.99, 'Malbec', 8);
+('Mochila Escolar', 39.99, 'Mochila escolar preta', 500),
+('Whey-Protein', 99.99, 'Whey-Protein', 200),
+('Óculos de Sol', 12.99, 'Óculos de sol estilo aviador', 130),
+
+
+INSERT INTO Pedidos (cliente_id, data_compra, v_total, d_e_entrega) VALUES
+(1, '2024-03-29', 59.98, '2024-05-01'),
+(2, '2024-03-10', 179.97, '2024-05-02'),
+(3, '2024-03-10', 69.99, '2024-05-03'),
+(4, '2024-03-11', 119.98, '2024-05-04'),
+(5, '2024-03-27', 99.01, '2024-05-05');
+
+INSERT INTO itens_pedido (pedido_id, produto_id, quantidade, v_unitario, v_total) VALUES
+(1, 1, 2, 29.99, 59.90),
+(2, 2, 2, 79.99, 159.98),
+(2, 3, 1, 99.99, 99.99),
+(3, 4, 2, 59.99, 119.98),
+(4, 5, 1, 39.99, 39.99),
+(4, 6, 1, 59.99, 59.99),
+(5, 7, 1, 69.99, 69.99),
+(5, 8, 1, 19.99, 19.99);
+DELETE FROM clientes WHERE cliente_id = 10;
